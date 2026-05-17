@@ -1,0 +1,61 @@
+{
+  "title": "El Eco de Athgealltanas",
+  "subtitle": "Mage: The Ascension M20",
+  "status": "Sesión 4 — Día 5 noche · Kaeron Archimago · Kentaro encarnado · Cita con Sunim mañana",
+  "groups": [
+    {
+      "id": "inicio",
+      "title": "Inicio",
+      "items": [
+        { "id": "dashboard", "title": "Crónica", "icon": "📔", "file": "data/inicio.md" }
+      ]
+    },
+    {
+      "id": "cabala",
+      "title": "La Cábala",
+      "items": [
+        { "id": "personajes", "title": "Personajes", "icon": "🧙", "file": "data/personajes.md" },
+        { "id": "magia", "title": "Magia y Rotes", "icon": "📖", "file": "data/magia.md", "mode": "grimoire" }
+      ]
+    },
+    {
+      "id": "mundo",
+      "title": "Mundo",
+      "items": [
+        { "id": "lugares", "title": "Lugares", "icon": "🏰", "file": "data/lugares.md" },
+        { "id": "amenazas", "title": "Amenazas", "icon": "🔴", "file": "data/amenazas.md" }
+      ]
+    },
+    {
+      "id": "npcs",
+      "title": "Personajes",
+      "items": [
+        { "id": "aliados", "title": "Aliados", "icon": "👥", "file": "data/aliados.md" },
+        { "id": "enemigos", "title": "Enemigos", "icon": "⚠️", "file": "data/enemigos.md" },
+        { "id": "figuras", "title": "Otras Figuras", "icon": "🌍", "file": "data/figuras.md" }
+      ]
+    },
+    {
+      "id": "lore",
+      "title": "Lore",
+      "items": [
+        { "id": "historia", "title": "Historia", "icon": "🔮", "file": "data/lore.md" },
+        { "id": "cronologia", "title": "Cronología", "icon": "⏳", "file": "data/cronologia.md" }
+      ]
+    },
+    {
+      "id": "trama",
+      "title": "Trama",
+      "items": [
+        { "id": "quests", "title": "Quests y Misterios", "icon": "🎯", "file": "data/quests.md" }
+      ]
+    }
+  ],
+  "sessions": [
+    {
+      "id": "session-4",
+      "title": "Sesión 4 — Kaeron Archimago",
+      "file": "sessions/session_4.md"
+    }
+  ]
+}

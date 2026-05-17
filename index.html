@@ -1,0 +1,1257 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>El Eco de Athgealltanas</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cinzel+Decorative:wght@400;700;900&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<style>
+  :root {
+    --bg-deep: #0d0a14;
+    --bg-panel: #14101d;
+    --bg-card: #1c1729;
+    --border: #2a2238;
+    --border-strong: #3d3253;
+    --gold: #c9a961;
+    --gold-bright: #e8c878;
+    --gold-dim: #8a7340;
+    --text: #e8e2d4;
+    --text-dim: #a39c8c;
+    --text-faint: #6b6557;
+    --accent: #8b3a5a;
+    --accent-bright: #c14e7a;
+    --danger: #b04b3e;
+    --warning: #c9863a;
+    --success: #6b8e5a;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { height: 100%; }
+  body {
+    background: var(--bg-deep);
+    color: var(--text);
+    font-family: 'Crimson Pro', 'Georgia', serif;
+    font-size: 17px;
+    line-height: 1.65;
+    overflow: hidden;
+  }
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background:
+      radial-gradient(ellipse at 20% 10%, rgba(139, 58, 90, 0.08) 0%, transparent 50%),
+      radial-gradient(ellipse at 80% 90%, rgba(201, 169, 97, 0.05) 0%, transparent 50%);
+    pointer-events: none;
+    z-index: 0;
+  }
+  #app {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* SIDEBAR */
+  aside#sidebar {
+    background: var(--bg-panel);
+    border-right: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .sidebar-header {
+    padding: 22px 24px 18px;
+    border-bottom: 1px solid var(--border);
+    background: linear-gradient(180deg, rgba(201, 169, 97, 0.04), transparent);
+  }
+  .sidebar-header h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 19px;
+    font-weight: 700;
+    color: var(--gold);
+    letter-spacing: 0.5px;
+    line-height: 1.3;
+    margin-bottom: 4px;
+  }
+  .sidebar-header .subtitle {
+    font-size: 12px;
+    color: var(--text-faint);
+    font-style: italic;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  .sidebar-header .status {
+    margin-top: 10px;
+    padding: 8px 10px;
+    background: rgba(176, 75, 62, 0.1);
+    border-left: 2px solid var(--accent);
+    font-size: 13px;
+    color: var(--text-dim);
+    line-height: 1.4;
+  }
+
+  .search-box {
+    padding: 14px 18px;
+    border-bottom: 1px solid var(--border);
+  }
+  .search-box input {
+    width: 100%;
+    background: var(--bg-card);
+    border: 1px solid var(--border-strong);
+    color: var(--text);
+    padding: 9px 12px;
+    font-family: inherit;
+    font-size: 14px;
+    border-radius: 3px;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+  .search-box input:focus { border-color: var(--gold-dim); }
+  .search-box input::placeholder { color: var(--text-faint); }
+
+  nav#nav {
+    flex: 1;
+    overflow-y: auto;
+    padding: 12px 0;
+  }
+  nav#nav::-webkit-scrollbar { width: 6px; }
+  nav#nav::-webkit-scrollbar-track { background: var(--bg-panel); }
+  nav#nav::-webkit-scrollbar-thumb { background: var(--border-strong); border-radius: 3px; }
+
+  .nav-group {
+    margin-bottom: 6px;
+  }
+  .nav-group-title {
+    padding: 10px 24px 4px;
+    font-family: 'Cinzel', serif;
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--gold-dim);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+  }
+  .nav-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 24px;
+    color: var(--text-dim);
+    cursor: pointer;
+    border-left: 2px solid transparent;
+    transition: all 0.15s;
+    font-size: 15px;
+  }
+  .nav-item:hover {
+    background: rgba(201, 169, 97, 0.05);
+    color: var(--text);
+  }
+  .nav-item.active {
+    background: rgba(201, 169, 97, 0.08);
+    color: var(--gold-bright);
+    border-left-color: var(--gold);
+  }
+  .nav-item .icon { font-size: 16px; }
+
+  /* MAIN */
+  main#content {
+    overflow-y: auto;
+    padding: 0;
+    background: var(--bg-deep);
+    position: relative;
+  }
+  main#content::-webkit-scrollbar { width: 10px; }
+  main#content::-webkit-scrollbar-track { background: var(--bg-deep); }
+  main#content::-webkit-scrollbar-thumb { background: var(--border-strong); border-radius: 5px; }
+  main#content::-webkit-scrollbar-thumb:hover { background: var(--gold-dim); }
+
+  #article {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 56px 64px 80px;
+  }
+
+  /* MARKDOWN */
+  #article h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 38px;
+    font-weight: 700;
+    color: var(--gold);
+    margin-bottom: 18px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--border-strong);
+    line-height: 1.2;
+    letter-spacing: 0.5px;
+  }
+  #article h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--gold-bright);
+    margin: 36px 0 14px;
+    padding-top: 8px;
+    letter-spacing: 0.3px;
+  }
+  #article h3 {
+    font-family: 'Cinzel', serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text);
+    margin: 24px 0 10px;
+  }
+  #article h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--gold-bright);
+    margin: 18px 0 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  #article p {
+    margin: 10px 0;
+    color: var(--text);
+  }
+  #article em {
+    color: var(--text-dim);
+    font-style: italic;
+  }
+  #article strong {
+    color: var(--gold-bright);
+    font-weight: 600;
+  }
+  #article ul, #article ol {
+    margin: 10px 0 14px 24px;
+    color: var(--text);
+  }
+  #article li {
+    margin: 4px 0;
+    padding-left: 4px;
+  }
+  #article li::marker { color: var(--gold-dim); }
+  #article hr {
+    border: none;
+    border-top: 1px solid var(--border-strong);
+    margin: 32px 0;
+    position: relative;
+  }
+  #article hr::after {
+    content: '✦';
+    position: absolute;
+    top: -11px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--bg-deep);
+    padding: 0 12px;
+    color: var(--gold-dim);
+    font-size: 14px;
+  }
+  #article blockquote {
+    margin: 16px 0;
+    padding: 14px 20px;
+    background: var(--bg-card);
+    border-left: 3px solid var(--gold);
+    color: var(--text-dim);
+    font-style: italic;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  #article blockquote p { margin: 4px 0; color: var(--text-dim); }
+  #article code {
+    background: var(--bg-card);
+    color: var(--gold-bright);
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 0.9em;
+    font-family: 'Menlo', monospace;
+  }
+  #article table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+    background: var(--bg-panel);
+    font-size: 15px;
+  }
+  #article th {
+    background: rgba(201, 169, 97, 0.08);
+    color: var(--gold-bright);
+    padding: 10px 14px;
+    text-align: left;
+    font-family: 'Cinzel', serif;
+    font-weight: 600;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 1px solid var(--border-strong);
+  }
+  #article td {
+    padding: 10px 14px;
+    border-bottom: 1px solid var(--border);
+    color: var(--text);
+    vertical-align: top;
+  }
+  #article tr:last-child td { border-bottom: none; }
+  #article tr:hover td { background: rgba(201, 169, 97, 0.03); }
+
+  /* SEARCH RESULTS */
+  .search-results { padding: 0; }
+  .search-result {
+    background: var(--bg-card);
+    border-left: 2px solid var(--gold-dim);
+    padding: 14px 18px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    transition: all 0.15s;
+    border-radius: 3px;
+  }
+  .search-result:hover {
+    border-left-color: var(--gold);
+    background: rgba(201, 169, 97, 0.05);
+  }
+  .search-result .section {
+    font-family: 'Cinzel', serif;
+    font-size: 12px;
+    color: var(--gold);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+  .search-result .excerpt {
+    color: var(--text-dim);
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .search-result mark {
+    background: rgba(201, 169, 97, 0.25);
+    color: var(--gold-bright);
+    padding: 0 2px;
+    border-radius: 2px;
+  }
+
+  .loading {
+    color: var(--text-faint);
+    font-style: italic;
+    text-align: center;
+    padding: 60px 0;
+  }
+
+  /* MOBILE */
+  .mobile-toggle {
+    display: none;
+    position: fixed;
+    top: 14px;
+    left: 14px;
+    z-index: 100;
+    background: var(--bg-card);
+    border: 1px solid var(--border-strong);
+    color: var(--gold);
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  @media (max-width: 880px) {
+    #app { grid-template-columns: 1fr; }
+    aside#sidebar {
+      position: fixed;
+      top: 0; left: 0; bottom: 0;
+      width: 300px;
+      z-index: 99;
+      transform: translateX(-100%);
+      transition: transform 0.25s;
+    }
+    aside#sidebar.open { transform: translateX(0); }
+    .mobile-toggle { display: block; }
+    #article { padding: 64px 24px 40px; }
+    #article h1 { font-size: 28px; }
+  }
+
+  /* ============================================
+     GRIMOIRE MODE — Liber Pactorum
+     ============================================ */
+  body.grimoire-active main#content {
+    background:
+      radial-gradient(ellipse at top, #1a0f0a 0%, #0a0805 100%);
+  }
+  body.grimoire-active #article {
+    max-width: 100%;
+    padding: 36px 24px 32px;
+  }
+  .grimoire {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+  .grimoire .book {
+    width: 100%;
+    max-width: 1180px;
+    perspective: 2400px;
+  }
+  .grimoire .spread {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background:
+      linear-gradient(180deg, #2a1810 0%, #1a0e08 100%);
+    padding: 16px;
+    border: 1px solid #4a3520;
+    border-radius: 4px;
+    box-shadow:
+      0 0 0 1px #0a0604,
+      0 0 0 6px rgba(74, 53, 32, 0.4),
+      0 0 0 7px #2a1810,
+      0 40px 80px rgba(0, 0, 0, 0.7),
+      0 12px 30px rgba(0, 0, 0, 0.5);
+    position: relative;
+    animation: pageTurn 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  @keyframes pageTurn {
+    from { opacity: 0; transform: translateY(12px) scale(0.985); }
+    to   { opacity: 1; transform: translateY(0) scale(1); }
+  }
+  .grimoire .spread::before {
+    /* spine shadow over the gutter */
+    content: '';
+    position: absolute;
+    top: 16px;
+    bottom: 16px;
+    left: 50%;
+    width: 56px;
+    margin-left: -28px;
+    background:
+      linear-gradient(90deg,
+        transparent 0%,
+        rgba(0,0,0,0.15) 20%,
+        rgba(0,0,0,0.55) 50%,
+        rgba(0,0,0,0.15) 80%,
+        transparent 100%);
+    pointer-events: none;
+    z-index: 3;
+  }
+  .grimoire .page {
+    position: relative;
+    min-height: 680px;
+    padding: 56px 64px 60px;
+    color: #3a2818;
+    font-family: 'EB Garamond', 'IM Fell English', 'Garamond', serif;
+    font-size: 17px;
+    line-height: 1.6;
+    background-color: #ecd9aa;
+    background-image:
+      radial-gradient(at 22% 18%, rgba(180, 130, 60, 0.10) 0%, transparent 55%),
+      radial-gradient(at 78% 82%, rgba(130, 80, 30, 0.14) 0%, transparent 50%),
+      radial-gradient(at 50% 50%, rgba(247, 232, 188, 0.4) 0%, transparent 70%),
+      url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='400'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.4  0 0 0 0 0.28  0 0 0 0 0.12  0 0 0 0.18 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+    background-blend-mode: multiply, multiply, normal, multiply;
+    background-size: auto, auto, auto, 400px 400px;
+  }
+  .grimoire .page-left {
+    border-radius: 2px 0 0 2px;
+    box-shadow:
+      inset -22px 0 30px -8px rgba(60, 30, 10, 0.35),
+      inset 8px 8px 24px rgba(60, 30, 10, 0.10);
+  }
+  .grimoire .page-right {
+    border-radius: 0 2px 2px 0;
+    box-shadow:
+      inset 22px 0 30px -8px rgba(60, 30, 10, 0.35),
+      inset -8px 8px 24px rgba(60, 30, 10, 0.10);
+  }
+  /* Double-line ornamental frame */
+  .grimoire .page::before {
+    content: '';
+    position: absolute;
+    inset: 28px;
+    border: 1px solid rgba(120, 75, 25, 0.55);
+    pointer-events: none;
+  }
+  .grimoire .page::after {
+    content: '';
+    position: absolute;
+    inset: 32px;
+    border: 1px solid rgba(120, 75, 25, 0.25);
+    pointer-events: none;
+  }
+  /* Corner flourishes */
+  .grimoire .page .corner {
+    position: absolute;
+    font-family: 'Cinzel Decorative', serif;
+    color: rgba(120, 70, 20, 0.55);
+    font-size: 22px;
+    z-index: 2;
+    line-height: 1;
+    pointer-events: none;
+  }
+  .grimoire .page .corner.tl { top: 18px; left: 20px; }
+  .grimoire .page .corner.tr { top: 18px; right: 20px; transform: scaleX(-1); }
+  .grimoire .page .corner.bl { bottom: 18px; left: 20px; transform: scaleY(-1); }
+  .grimoire .page .corner.br { bottom: 18px; right: 20px; transform: scale(-1, -1); }
+
+  .grimoire .page-content {
+    position: relative;
+    z-index: 1;
+  }
+  /* Cover page — special treatment for the very first page only */
+  .grimoire .spread[data-spread="0"] .page-left .page-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 540px;
+    text-align: center;
+  }
+  .grimoire .spread[data-spread="0"] .page-left h1 {
+    font-family: 'Cinzel Decorative', 'Cinzel', serif;
+    font-weight: 900;
+    font-size: 54px;
+    color: #6b3010;
+    border: none;
+    margin: 20px 0 12px;
+    letter-spacing: 3px;
+    line-height: 1.1;
+    text-shadow: 1px 1px 0 rgba(255, 220, 160, 0.4);
+  }
+  .grimoire .page-content h1 {
+    font-family: 'Cinzel Decorative', 'Cinzel', serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: #6b3010;
+    text-align: center;
+    margin: 8px 0 20px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid rgba(120, 75, 25, 0.4);
+    letter-spacing: 1.5px;
+    line-height: 1.15;
+  }
+  .grimoire .page-content h2 {
+    font-family: 'Cinzel Decorative', 'Cinzel', serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: #6b3010;
+    text-align: center;
+    margin: 4px 0 14px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgba(120, 75, 25, 0.35);
+    letter-spacing: 1px;
+    line-height: 1.2;
+  }
+  .grimoire .page-content h3 {
+    font-family: 'Cinzel', serif;
+    font-size: 19px;
+    font-weight: 600;
+    color: #6b3010;
+    margin: 20px 0 8px;
+    letter-spacing: 0.5px;
+  }
+  .grimoire .page-content p {
+    margin: 12px 0;
+    text-align: justify;
+    hyphens: auto;
+  }
+  /* Centered single-glyph sigil */
+  .grimoire .page-content p:has(> :only-child),
+  .grimoire .page-content > p:nth-of-type(1) {
+    /* fallback — handled by JS for sigil paragraphs */
+  }
+  .grimoire .sigil {
+    text-align: center;
+    font-size: 38px;
+    color: #6b3010;
+    margin: 6px 0 16px !important;
+    font-family: 'Cinzel Decorative', serif;
+    line-height: 1;
+    text-shadow: 0 1px 0 rgba(255, 220, 160, 0.5);
+  }
+  .grimoire .page-content strong {
+    color: #5b2b10;
+    font-weight: 600;
+  }
+  .grimoire .page-content em {
+    color: #6b4520;
+    font-style: italic;
+  }
+  .grimoire .page-content blockquote {
+    margin: 18px 32px;
+    padding: 14px 4px;
+    font-family: 'IM Fell English', 'EB Garamond', serif;
+    font-style: italic;
+    text-align: center;
+    color: #5b3010;
+    border-top: 1px solid rgba(120, 75, 25, 0.4);
+    border-bottom: 1px solid rgba(120, 75, 25, 0.4);
+    font-size: 17px;
+    line-height: 1.55;
+  }
+  .grimoire .page-content blockquote p {
+    margin: 6px 0;
+    text-align: center;
+    color: #5b3010;
+  }
+  .grimoire .page-content hr {
+    border: none;
+    height: 14px;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 14'><text x='100' y='12' text-anchor='middle' font-family='Cinzel Decorative' font-size='14' fill='%23784818' opacity='0.65'>%E2%9C%A6   %E2%9D%A6   %E2%9C%A6</text></svg>");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin: 20px 0;
+  }
+  .grimoire .page-content ul, .grimoire .page-content ol {
+    margin: 12px 0 14px 22px;
+  }
+  .grimoire .page-content li {
+    margin: 6px 0;
+  }
+  .grimoire .page-content li::marker {
+    color: #8b4515;
+  }
+  .grimoire .page-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 14px 0;
+    background: rgba(255, 240, 200, 0.25);
+    font-size: 15px;
+  }
+  .grimoire .page-content th {
+    background: rgba(120, 75, 25, 0.18);
+    color: #5b2b10;
+    padding: 9px 12px;
+    font-family: 'Cinzel', serif;
+    font-weight: 600;
+    text-align: left;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 1.5px solid rgba(120, 75, 25, 0.5);
+  }
+  .grimoire .page-content td {
+    padding: 8px 12px;
+    border-bottom: 1px solid rgba(120, 75, 25, 0.18);
+    color: #3a2818;
+    vertical-align: top;
+  }
+  .grimoire .page-content tr:last-child td { border-bottom: none; }
+  /* Drop cap on the first paragraph of pages that have prose */
+  .grimoire .page-content p.drop-cap::first-letter {
+    font-family: 'Cinzel Decorative', serif;
+    font-weight: 900;
+    float: left;
+    font-size: 64px;
+    line-height: 0.85;
+    padding: 6px 10px 0 0;
+    color: #8b3010;
+    text-shadow: 1px 1px 0 rgba(255, 220, 160, 0.5);
+  }
+  /* Folio (page number) */
+  .grimoire .folio {
+    position: absolute;
+    bottom: 18px;
+    font-family: 'Cinzel', serif;
+    font-size: 11px;
+    color: rgba(120, 75, 25, 0.7);
+    letter-spacing: 3px;
+    z-index: 2;
+  }
+  .grimoire .page-left .folio { left: 50px; }
+  .grimoire .page-right .folio { right: 50px; }
+  /* Page-blank state */
+  .grimoire .page-blank {
+    background-image:
+      radial-gradient(at 30% 30%, rgba(180, 130, 60, 0.06) 0%, transparent 60%),
+      radial-gradient(at 70% 70%, rgba(130, 80, 30, 0.08) 0%, transparent 50%),
+      url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='400'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.4  0 0 0 0 0.28  0 0 0 0 0.12  0 0 0 0.12 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+    background-color: #ecd9aa;
+  }
+  .grimoire .page-blank .page-content,
+  .grimoire .page-blank .folio,
+  .grimoire .page-blank .corner { display: none; }
+  .grimoire .page-blank::after {
+    content: '✦';
+    color: rgba(120, 75, 25, 0.3);
+    font-size: 28px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  /* Controls */
+  .book-controls {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    margin-top: 4px;
+    padding: 4px;
+  }
+  .turn-btn {
+    background: rgba(28, 23, 41, 0.8);
+    border: 1px solid var(--gold-dim);
+    color: var(--gold);
+    padding: 9px 22px;
+    font-family: 'Cinzel', serif;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: all 0.2s;
+    text-transform: uppercase;
+  }
+  .turn-btn:hover:not(:disabled) {
+    background: rgba(201, 169, 97, 0.12);
+    color: var(--gold-bright);
+    border-color: var(--gold);
+    box-shadow: 0 0 14px rgba(201, 169, 97, 0.2);
+  }
+  .turn-btn:disabled {
+    opacity: 0.25;
+    cursor: not-allowed;
+  }
+  .page-indicator {
+    font-family: 'Cinzel', serif;
+    font-size: 13px;
+    color: var(--gold-bright);
+    letter-spacing: 3px;
+    min-width: 180px;
+    text-align: center;
+  }
+  .keyboard-hint {
+    font-size: 11px;
+    color: var(--text-faint);
+    font-style: italic;
+    letter-spacing: 1px;
+    margin-top: -8px;
+  }
+
+  /* Click-to-turn zones on page edges */
+  .grimoire .page-left {
+    cursor: w-resize;
+  }
+  .grimoire .page-right {
+    cursor: e-resize;
+  }
+  .grimoire .page-left.disabled-turn,
+  .grimoire .page-right.disabled-turn {
+    cursor: default;
+  }
+
+  /* Responsive: single page on narrow screens */
+  @media (max-width: 980px) {
+    .grimoire .spread { grid-template-columns: 1fr; }
+    .grimoire .spread::before { display: none; }
+    .grimoire .page-right { display: none; }
+    .grimoire .page { padding: 40px 32px; min-height: 580px; }
+    .grimoire .page-left { border-radius: 2px; box-shadow: inset 0 0 30px rgba(60, 30, 10, 0.15); }
+    .grimoire .page-content h1 { font-size: 28px; }
+    .grimoire .page-content h2 { font-size: 22px; }
+    body.grimoire-active #article { padding: 20px 12px; }
+  }
+
+  /* ============================================
+     GRIMOIRE — Overrides (higher specificity than #article cascade)
+     ============================================ */
+  #article .grimoire .page-content,
+  #article .grimoire .page-content p,
+  #article .grimoire .page-content li,
+  #article .grimoire .page-content td { color: #3a2818; }
+  #article .grimoire .page-content strong { color: #5b2b10; font-weight: 600; }
+  #article .grimoire .page-content em { color: #6b4520; font-style: italic; }
+  #article .grimoire .page-content h1 { color: #6b3010; border-color: rgba(120,75,25,0.4); }
+  #article .grimoire .page-content h2 { color: #6b3010; border-color: rgba(120,75,25,0.35); }
+  #article .grimoire .page-content h3 { color: #6b3010; }
+  #article .grimoire .page-content blockquote {
+    background: transparent;
+    border-left: none;
+    color: #5b3010;
+    padding: 14px 4px;
+    border-top: 1px solid rgba(120,75,25,0.4);
+    border-bottom: 1px solid rgba(120,75,25,0.4);
+  }
+  #article .grimoire .page-content blockquote p { color: #5b3010; }
+  #article .grimoire .page-content li::marker { color: #8b4515; }
+  #article .grimoire .page-content hr::after { content: none; }
+  #article .grimoire .page-content table {
+    background: rgba(255, 240, 200, 0.35);
+    border: 1px solid rgba(120, 75, 25, 0.35);
+  }
+  #article .grimoire .page-content th {
+    background: rgba(120, 75, 25, 0.18);
+    color: #5b2b10;
+    border-bottom: 1.5px solid rgba(120, 75, 25, 0.5);
+  }
+  #article .grimoire .page-content td {
+    border-bottom: 1px solid rgba(120, 75, 25, 0.18);
+    color: #3a2818;
+    background: transparent;
+  }
+  #article .grimoire .page-content tr:hover td { background: rgba(120, 75, 25, 0.08); }
+  #article .grimoire .spread[data-spread="0"] .page-left h1 { color: #6b3010; border: none; }
+  #article .grimoire .spread[data-spread="0"] .page-left .page-content p {
+    text-align: center;
+    max-width: 380px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #article .grimoire .spread[data-spread="0"] .page-left .page-content p.drop-cap::first-letter {
+    /* No drop cap on the cover — keep titles clean */
+    font-size: inherit;
+    float: none;
+    font-family: inherit;
+    color: inherit;
+    padding: 0;
+    text-shadow: none;
+  }
+  #article .grimoire .sigil {
+    color: #6b3010;
+    text-align: center;
+    font-size: 42px;
+    margin: 6px 0 18px;
+    font-family: 'Cinzel Decorative', 'Cinzel', serif;
+    line-height: 1;
+    letter-spacing: 0;
+    text-shadow: 0 1px 0 rgba(255, 220, 160, 0.5);
+  }
+  #article .grimoire .page-content p.sigil + p { margin-top: 0; }
+
+  /* Rote stats block — small inscription-style meta */
+  #article .grimoire .meta {
+    display: block;
+    margin: 14px auto 22px;
+    padding: 14px 22px;
+    border-top: 1px solid rgba(120,75,25,0.45);
+    border-bottom: 1px solid rgba(120,75,25,0.45);
+    background: rgba(255, 240, 200, 0.25);
+    font-family: 'Cinzel', serif;
+    text-align: center;
+    line-height: 1.7;
+  }
+  #article .grimoire .meta .row {
+    display: block;
+    font-size: 14px;
+    color: #3a2818;
+    letter-spacing: 0.3px;
+  }
+  #article .grimoire .meta .row .label {
+    color: #6b3010;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 2px;
+    margin-right: 6px;
+  }
+  #article .grimoire .meta .row .sep {
+    color: rgba(120,75,25,0.5);
+    margin: 0 4px;
+  }
+</style>
+</head>
+<body>
+<button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">☰</button>
+<div id="app">
+  <aside id="sidebar">
+    <div class="sidebar-header">
+      <h1 id="title">El Eco de Athgealltanas</h1>
+      <div class="subtitle" id="subtitle">Mage: The Ascension M20</div>
+      <div class="status" id="status">Cargando...</div>
+    </div>
+    <div class="search-box">
+      <input type="search" id="search" placeholder="Buscar en la crónica..." autocomplete="off">
+    </div>
+    <nav id="nav"></nav>
+  </aside>
+  <main id="content">
+    <article id="article">
+      <div class="loading">Convocando el Tapiz…</div>
+    </article>
+  </main>
+</div>
+
+<script>
+  marked.setOptions({ breaks: false, gfm: true });
+
+  const state = {
+    manifest: null,
+    activeId: null,
+    cache: new Map(),
+  };
+
+  async function loadManifest() {
+    const res = await fetch('manifest.json?t=' + Date.now());
+    if (!res.ok) throw new Error('manifest.json no encontrado');
+    return res.json();
+  }
+
+  async function loadFile(path) {
+    if (state.cache.has(path)) return state.cache.get(path);
+    const res = await fetch(path + '?t=' + Date.now());
+    if (!res.ok) throw new Error(path + ' no encontrado');
+    const txt = await res.text();
+    state.cache.set(path, txt);
+    return txt;
+  }
+
+  function buildNav(manifest) {
+    const nav = document.getElementById('nav');
+    nav.innerHTML = '';
+    for (const group of manifest.groups) {
+      const wrap = document.createElement('div');
+      wrap.className = 'nav-group';
+      const title = document.createElement('div');
+      title.className = 'nav-group-title';
+      title.textContent = group.title;
+      wrap.appendChild(title);
+      for (const item of group.items) {
+        const el = document.createElement('div');
+        el.className = 'nav-item';
+        el.dataset.id = item.id;
+        el.dataset.file = item.file;
+        el.innerHTML = `<span class="icon">${item.icon || '•'}</span><span>${item.title}</span>`;
+        el.addEventListener('click', () => navigate(item.id));
+        wrap.appendChild(el);
+      }
+      nav.appendChild(wrap);
+    }
+    // sessions group
+    if (manifest.sessions && manifest.sessions.length > 0) {
+      const wrap = document.createElement('div');
+      wrap.className = 'nav-group';
+      const title = document.createElement('div');
+      title.className = 'nav-group-title';
+      title.textContent = 'Sesiones';
+      wrap.appendChild(title);
+      for (const s of manifest.sessions) {
+        const el = document.createElement('div');
+        el.className = 'nav-item';
+        el.dataset.id = s.id;
+        el.dataset.file = s.file;
+        el.innerHTML = `<span class="icon">📔</span><span>${s.title}</span>`;
+        el.addEventListener('click', () => navigate(s.id));
+        wrap.appendChild(el);
+      }
+      nav.appendChild(wrap);
+    }
+  }
+
+  function findItem(id) {
+    for (const g of state.manifest.groups) {
+      for (const it of g.items) if (it.id === id) return it;
+    }
+    for (const s of (state.manifest.sessions || [])) {
+      if (s.id === id) return s;
+    }
+    return null;
+  }
+
+  async function navigate(id) {
+    const item = findItem(id);
+    if (!item) return;
+    state.activeId = id;
+    document.querySelectorAll('.nav-item').forEach(el => {
+      el.classList.toggle('active', el.dataset.id === id);
+    });
+    history.replaceState(null, '', '#' + id);
+    const article = document.getElementById('article');
+    article.innerHTML = '<div class="loading">Convocando el Tapiz…</div>';
+
+    // Toggle body class for mode-specific styling
+    document.body.classList.toggle('grimoire-active', item.mode === 'grimoire');
+
+    try {
+      const md = await loadFile(item.file);
+      if (item.mode === 'grimoire') {
+        renderGrimoire(md);
+      } else {
+        article.innerHTML = marked.parse(md);
+      }
+      article.scrollTop = 0;
+      document.getElementById('content').scrollTop = 0;
+    } catch (e) {
+      article.innerHTML = `<h1>Error</h1><p>No se pudo cargar ${item.file}: ${e.message}</p>`;
+    }
+    closeMobileSidebar();
+  }
+
+  // -------- GRIMOIRE MODE --------
+  const ROMAN = [['M',1000],['CM',900],['D',500],['CD',400],['C',100],['XC',90],['L',50],['XL',40],['X',10],['IX',9],['V',5],['IV',4],['I',1]];
+  function toRoman(n) {
+    let s = '';
+    for (const [r, v] of ROMAN) while (n >= v) { s += r; n -= v; }
+    return s;
+  }
+
+  // Single-glyph paragraphs become decorative sigils
+  const SIGIL_RE = /^<p>([\s\S]{1,4})<\/p>$/;
+  function transformSigils(html) {
+    return html.replace(/<p>([^<]{1,4})<\/p>/g, (m, content) => {
+      const trimmed = content.trim();
+      // Detect single-glyph or short ornament (no spaces, no letters/digits beyond the symbol)
+      if (trimmed.length <= 3 && !/[a-zA-Z0-9áéíóúñ]/.test(trimmed) && trimmed.length > 0) {
+        return `<p class="sigil">${trimmed}</p>`;
+      }
+      return m;
+    });
+  }
+
+  // Heuristic: add drop-cap class to first <p> on the page if it's a prose paragraph
+  function addDropCap(html) {
+    // Find first <p> that isn't sigil/strong-only and has substantial text
+    const tmp = document.createElement('div');
+    tmp.innerHTML = html;
+    const paragraphs = tmp.querySelectorAll('p');
+    for (const p of paragraphs) {
+      if (p.classList.contains('sigil')) continue;
+      // Skip paragraphs that start with bold (metadata blocks like **Esferas:** ...)
+      if (p.firstElementChild && p.firstElementChild.tagName === 'STRONG') continue;
+      const text = p.textContent.trim();
+      if (text.length < 40) continue;
+      p.classList.add('drop-cap');
+      break;
+    }
+    return tmp.innerHTML;
+  }
+
+  const grimoire = {
+    pages: [],
+    spread: 0,
+    keyHandler: null,
+  };
+
+  function renderGrimoire(md) {
+    // Split the markdown by horizontal rule lines
+    const rawPages = md.split(/^\s*---\s*$/gm).map(s => s.trim()).filter(Boolean);
+    grimoire.pages = rawPages;
+    grimoire.spread = 0;
+    grimoire.totalSpreads = Math.ceil(rawPages.length / 2);
+
+    const article = document.getElementById('article');
+    article.innerHTML = '';
+
+    const root = document.createElement('div');
+    root.className = 'grimoire';
+
+    const book = document.createElement('div');
+    book.className = 'book';
+    book.id = 'grimoire-book';
+    root.appendChild(book);
+
+    const controls = document.createElement('div');
+    controls.className = 'book-controls';
+    controls.innerHTML = `
+      <button class="turn-btn" id="gPrev">‹ Anterior</button>
+      <span class="page-indicator" id="gIndicator"></span>
+      <button class="turn-btn" id="gNext">Siguiente ›</button>
+    `;
+    root.appendChild(controls);
+
+    const hint = document.createElement('div');
+    hint.className = 'keyboard-hint';
+    hint.textContent = '← → para pasar página · click en los bordes de la página';
+    root.appendChild(hint);
+
+    article.appendChild(root);
+
+    document.getElementById('gPrev').addEventListener('click', () => turnPage(-1));
+    document.getElementById('gNext').addEventListener('click', () => turnPage(1));
+
+    // Keyboard navigation (replace any prior handler)
+    if (grimoire.keyHandler) document.removeEventListener('keydown', grimoire.keyHandler);
+    grimoire.keyHandler = (e) => {
+      if (!document.body.classList.contains('grimoire-active')) return;
+      if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+      if (e.key === 'ArrowLeft') { turnPage(-1); e.preventDefault(); }
+      if (e.key === 'ArrowRight') { turnPage(1); e.preventDefault(); }
+    };
+    document.addEventListener('keydown', grimoire.keyHandler);
+
+    drawSpread();
+  }
+
+  function turnPage(delta) {
+    const next = grimoire.spread + delta;
+    if (next < 0 || next >= grimoire.totalSpreads) return;
+    grimoire.spread = next;
+    drawSpread();
+  }
+
+  function drawSpread() {
+    const book = document.getElementById('grimoire-book');
+    if (!book) return;
+    const leftIdx = grimoire.spread * 2;
+    const rightIdx = leftIdx + 1;
+    const leftMd = grimoire.pages[leftIdx];
+    const rightMd = grimoire.pages[rightIdx];
+
+    const renderPage = (md, idx, side) => {
+      if (!md) {
+        return `<div class="page page-${side} page-blank"></div>`;
+      }
+      let html = marked.parse(md);
+      html = transformSigils(html);
+      html = addDropCap(html);
+      const folio = toRoman(idx + 1);
+      return `
+        <div class="page page-${side}">
+          <span class="corner tl">❦</span>
+          <span class="corner tr">❦</span>
+          <span class="corner bl">❦</span>
+          <span class="corner br">❦</span>
+          <div class="page-content">${html}</div>
+          <div class="folio">FOLIO ${folio}</div>
+        </div>
+      `;
+    };
+
+    book.innerHTML = `
+      <div class="spread" data-spread="${grimoire.spread}">
+        ${renderPage(leftMd, leftIdx, 'left')}
+        ${renderPage(rightMd, rightIdx, 'right')}
+      </div>
+    `;
+
+    // Click-to-turn on page edges
+    const leftPage = book.querySelector('.page-left');
+    const rightPage = book.querySelector('.page-right');
+    if (leftPage && grimoire.spread > 0) {
+      leftPage.addEventListener('click', (e) => {
+        // Only turn when click lands near the outer edge (left third)
+        const rect = leftPage.getBoundingClientRect();
+        if (e.clientX - rect.left < rect.width * 0.18) turnPage(-1);
+      });
+    } else if (leftPage) {
+      leftPage.classList.add('disabled-turn');
+    }
+    if (rightPage && grimoire.spread < grimoire.totalSpreads - 1) {
+      rightPage.addEventListener('click', (e) => {
+        const rect = rightPage.getBoundingClientRect();
+        if (rect.right - e.clientX < rect.width * 0.18) turnPage(1);
+      });
+    } else if (rightPage) {
+      rightPage.classList.add('disabled-turn');
+    }
+
+    const prevBtn = document.getElementById('gPrev');
+    const nextBtn = document.getElementById('gNext');
+    const ind = document.getElementById('gIndicator');
+    if (prevBtn) prevBtn.disabled = grimoire.spread === 0;
+    if (nextBtn) nextBtn.disabled = grimoire.spread >= grimoire.totalSpreads - 1;
+    if (ind) {
+      const total = grimoire.pages.length;
+      const lf = toRoman(leftIdx + 1);
+      const rf = rightMd ? toRoman(rightIdx + 1) : null;
+      const pageLabel = rf ? `${lf} – ${rf}` : lf;
+      ind.textContent = `Folio ${pageLabel} de ${toRoman(total)}`;
+    }
+  }
+  // -------- END GRIMOIRE MODE --------
+
+  function escapeHtml(s) {
+    return s.replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  }
+
+  async function doSearch(query) {
+    const article = document.getElementById('article');
+    const q = query.trim().toLowerCase();
+    if (q.length < 2) return;
+    article.innerHTML = '<div class="loading">Rastreando firma mágica…</div>';
+    const allItems = [];
+    for (const g of state.manifest.groups) {
+      for (const it of g.items) allItems.push({ ...it, group: g.title });
+    }
+    for (const s of (state.manifest.sessions || [])) {
+      allItems.push({ ...s, group: 'Sesiones' });
+    }
+    const results = [];
+    for (const it of allItems) {
+      try {
+        const md = await loadFile(it.file);
+        const lower = md.toLowerCase();
+        let idx = lower.indexOf(q);
+        while (idx !== -1 && results.length < 50) {
+          const start = Math.max(0, idx - 80);
+          const end = Math.min(md.length, idx + q.length + 120);
+          let excerpt = md.slice(start, end).replace(/[#*>`|]/g, '').replace(/\s+/g, ' ').trim();
+          if (start > 0) excerpt = '…' + excerpt;
+          if (end < md.length) excerpt = excerpt + '…';
+          const re = new RegExp(q.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'gi');
+          const highlighted = escapeHtml(excerpt).replace(re, m => `<mark>${m}</mark>`);
+          results.push({ item: it, excerpt: highlighted });
+          idx = lower.indexOf(q, idx + q.length);
+          if (results.filter(r => r.item.id === it.id).length >= 3) break;
+        }
+      } catch (e) {}
+    }
+    if (results.length === 0) {
+      article.innerHTML = `<h1>Sin resultados</h1><p>Bráth no encuentra rastro de <em>${escapeHtml(query)}</em> en el Tapiz.</p>`;
+      return;
+    }
+    let html = `<h1>Resultados para "${escapeHtml(query)}"</h1><p style="color:var(--text-dim);margin-bottom:24px">${results.length} coincidencia${results.length>1?'s':''} en el Tapiz.</p><div class="search-results">`;
+    for (const r of results) {
+      html += `<div class="search-result" data-id="${r.item.id}">
+        <div class="section">${r.item.icon || ''} ${r.item.group} · ${r.item.title}</div>
+        <div class="excerpt">${r.excerpt}</div>
+      </div>`;
+    }
+    html += '</div>';
+    article.innerHTML = html;
+    article.querySelectorAll('.search-result').forEach(el => {
+      el.addEventListener('click', () => {
+        document.getElementById('search').value = '';
+        navigate(el.dataset.id);
+      });
+    });
+  }
+
+  let searchTimer = null;
+  function onSearch(e) {
+    clearTimeout(searchTimer);
+    const v = e.target.value;
+    if (v.trim().length < 2) {
+      if (state.activeId) navigate(state.activeId);
+      return;
+    }
+    searchTimer = setTimeout(() => doSearch(v), 250);
+  }
+
+  function closeMobileSidebar() {
+    document.getElementById('sidebar').classList.remove('open');
+  }
+
+  async function boot() {
+    try {
+      state.manifest = await loadManifest();
+      document.getElementById('title').textContent = state.manifest.title;
+      document.getElementById('subtitle').textContent = state.manifest.subtitle;
+      document.getElementById('status').textContent = state.manifest.status;
+      document.title = state.manifest.title;
+      buildNav(state.manifest);
+      document.getElementById('search').addEventListener('input', onSearch);
+      document.getElementById('mobileToggle').addEventListener('click', () => {
+        document.getElementById('sidebar').classList.toggle('open');
+      });
+      const hashId = window.location.hash.slice(1);
+      const firstItem = state.manifest.groups[0].items[0];
+      navigate(hashId && findItem(hashId) ? hashId : firstItem.id);
+    } catch (e) {
+      document.getElementById('article').innerHTML = `
+        <h1>El Tapiz está roto</h1>
+        <p>${e.message}</p>
+        <p style="margin-top:20px;color:var(--text-dim)">
+          Probablemente abriste <code>index.html</code> directamente con <code>file://</code>.
+          Los navegadores bloquean <code>fetch()</code> en ese caso.
+        </p>
+        <p style="margin-top:14px;color:var(--text-dim)">
+          Solución: en la terminal, dentro de esta carpeta, ejecutá:
+        </p>
+        <pre style="background:var(--bg-card);padding:14px;border-left:2px solid var(--gold);margin-top:8px;color:var(--gold-bright);font-family:Menlo,monospace">python3 -m http.server 8000</pre>
+        <p style="margin-top:14px;color:var(--text-dim)">
+          Y abrí <code>http://localhost:8000</code> en el navegador.
+        </p>
+      `;
+    }
+  }
+
+  boot();
+</script>
+</body>
+</html>
