@@ -34,7 +34,7 @@ Los dos polos físicos y metafísicos de la crónica: el santuario propio de la 
 **Nombre:** Bile an Eolais (irlandés antiguo — "Árbol del Conocimiento")
 **Ubicación:** Dentro del nodo de Athgealltanas
 **Ritual completado:** Día 4
-**Concepto:** Un Bile — árbol sagrado celta, eje espiritual del territorio — creado por Adam. Sus hojas contienen los recuerdos del futuro de la cábala. Inspirado en un ritual egipcio encontrado en la biblioteca de Carston, fusionado con tradición druídica irlandesa y precisión hermética de Mel.
+**Concepto:** Un Bile — árbol sagrado celta, eje espiritual del territorio — creado por Adam. Sus hojas contienen los recuerdos del futuro de la cábala. Inspirado en un ritual egipcio encontrado en la biblioteca de Caxton, fusionado con tradición druídica irlandesa y precisión hermética de Mel.
 
 **Esferas utilizadas en el ritual:**
 | Esfera | Mago | Función |
@@ -87,12 +87,12 @@ Los Tremere son magos herméticos que se convirtieron en vampiros — considerad
 - **Tytalus:** Creen que los Tremere son recuperables a través del conflicto y la superación.
 - **Genízaros:** Los consideran una abominación que hay que eliminar.
 - Esta tensión es uno de los ejes políticos activos de Doissetep.
-- Mel tuvo esta conversación específicamente con Carston.
+- Mel tuvo esta conversación específicamente con Caxton.
 
 ### La Decisión del Nuevo Diácono
 La cábala debe impulsar un candidato. Tres opciones:
 
-**Opción 1: Carston**
+**Opción 1: Caxton**
 - Posicionado, leal, alto mago con inteligencia táctica probada
 - La opción más segura y discreta
 

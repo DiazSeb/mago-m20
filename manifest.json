@@ -15,7 +15,8 @@
       "title": "La Cábala",
       "items": [
         { "id": "personajes", "title": "Personajes", "icon": "🧙", "file": "data/personajes.md" },
-        { "id": "magia", "title": "Magia y Rotes", "icon": "📖", "file": "data/magia.md", "mode": "grimoire" }
+        { "id": "magia", "title": "Magia y Rotes", "icon": "📖", "file": "data/magia.md", "mode": "grimoire" },
+        { "id": "objetos", "title": "Objetos y Artefactos", "icon": "🗝️", "file": "data/objetos.md" }
       ]
     },
     {

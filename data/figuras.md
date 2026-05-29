@@ -27,7 +27,7 @@ Actores que no son aliados ni enemigos directos pero cuyo destino está entrelaz
 **Acción:** Entregó a la cábala una carta dirigida específicamente a Thomas Mallory.
 **Propiedad de la carta:** Si alguien miente mientras la porta o la usa, el contenido se corrompe automáticamente. Funciona como extensión de las Leyes de Athgealltanas.
 **Contenido de la carta:** Secretos que la jerarquía de Doissetep — especialmente los Genízaros — teme profundamente.
-**Consejo de Carston:** No usar a Gulliver como vector visible — lo asociaría al intento y pondría a Gulliver en peligro.
+**Consejo de Caxton:** No usar a Gulliver como vector visible — lo asociaría al intento y pondría a Gulliver en peligro.
 
 ---
 
@@ -65,4 +65,4 @@ Actores que no son aliados ni enemigos directos pero cuyo destino está entrelaz
 **Facción:** Genízaros (enviado de Kaeron Mustae)
 **Descripción:** Japonés, estética ochentera, chaqueta de cuero azul corta
 **Aparición:** En la puerta entre Doissetep y Marte-1, después de que la cábala detectara el patrón Genízaro
-**Acción:** Los invitó a reunirse con Kaeron Mustae. La cábala pidió que la carta oficial llegue a casa de Carston.
+**Acción:** Los invitó a reunirse con Kaeron Mustae. La cábala pidió que la carta oficial llegue a casa de Caxton.

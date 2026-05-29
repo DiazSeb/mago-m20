@@ -28,19 +28,19 @@ De la Era Druídica al Día 5 actual — la línea de tiempo de Énna/Adam y de 
 ### Trama activa
 - **Incidente de la Mina:** Adam ejecuta Gilgul contra un Spectre. Descubre los 20 cascarones. Memoriza la firma mágica de Cyde.
 - **Restauración de Graneros:** Magia masiva para salvar el sustento de Marte-1 (Restauración Temporal).
-- **La Purga:** La Sociedad del Alma Endurecida desaparece hacia la Umbra Profunda. Carston alarmado.
+- **La Purga:** La Sociedad del Alma Endurecida desaparece hacia la Umbra Profunda. Caxton alarmado.
 - **El Pacto de la Planta Roja:** Alianza establecida con Aida-Wedo. Advertencia sobre los Genízaros.
 - **Localización de Cyde:** Ritual en el Santuario revela que el laboratorio de Cyde está en la Tierra.
 - **La Criatura del Nodo:** Entidad Genízaro de Planta + Carne intenta infiltrar Athgealltanas. Ahuyentada con fuego. Los Genízaros ahora saben dónde está el nodo.
 - **Marte-1:** Juana Quave encontrada investigando a Cyde.
-- **Entrada a Doissetep:** Adam detecta el patrón Genízaro de Planta + Carne en la seguridad. Totkiko Anssuen contacta a la cábala en nombre de Kaeron Mustae. La cábala pide carta oficial a casa de Carston.
+- **Entrada a Doissetep:** Adam detecta el patrón Genízaro de Planta + Carne en la seguridad. Totkiko Anssuen contacta a la cábala en nombre de Kaeron Mustae. La cábala pide carta oficial a casa de Caxton.
 - **Torre Bonisagus:** Reunión con Georgina. Confirma que no los observan. Mel proyecta conciencia en artefacto astral. Mel estudia Correspondencia.
-- **Casa de Carston (primera visita):** Info sobre Woody, las dos fichas faltantes, conflicto Tremere. Consejo sobre no usar a Gulliver como vector visible.
+- **Casa de Caxton (primera visita):** Info sobre Woody, las dos fichas faltantes, conflicto Tremere. Consejo sobre no usar a Gulliver como vector visible.
 - **Aida-Wedo (primera visita):** Trato para el cuerpo de Kentaro. Condición: Ojo de Cristal.
 - **Súil Morrigan desarrollado:** Adam deambula por Doissetep y captura a Woody. Entregado a Aida-Wedo.
 - **Día 3:** Todos los Diáconos, Ruby Children (David Cavanagh) y la cábala esperan en el puerto. Llega la Cofradía del Nuevo Viento por portal — Sunim, Fátima Al-Salam, Beth Raising Moon Thomas. Saludos formales. Adam detecta Paradoja masiva en Portos.
 - **Día 3-4:** Viaje místico de Mel con su mentor. Revela: el premium de Doissetep, el acceso de Portos, Heylel Teomim, la conexión del Cometa, la misión de detener a Portos.
-- **Casa de Carston (segunda visita):** Biblioteca — ritual egipcio encontrado para la phylacteria. Información sobre cómo llegar a Mallory.
+- **Casa de Caxton (segunda visita):** Biblioteca — ritual egipcio encontrado para la phylacteria. Información sobre cómo llegar a Mallory.
 - **Día 4:** Ritual del Bile an Eolais completado en el nodo. Adam, Mel y James. Trasfondo Vidas Pasadas 2 obtenido.
 - **Día 4:** Cofradía se reúne con Aida-Wedo. Reciben info de Cyde, Woody y plan del Diácono. No saben de Kentaro.
 - **Día 4:** Kentaro (forma de cuervo, Arcano 5) introducido en Doissetep pasando los scaneos.

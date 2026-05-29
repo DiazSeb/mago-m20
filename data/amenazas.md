@@ -14,7 +14,7 @@ Las fuerzas que presionan sobre el Tapiz: un planeta corrupto, una criatura cuya
 - **Descubrimiento de Adam:** Ejecutó Gilgul contra un Spectre y descubrió el fraude. Memorizó la firma mágica de Cyde en el proceso.
 
 ### La Purga
-La "Sociedad del Alma Endurecida" — una cábala entera — desapareció de Marte-1. Rastreados hasta la Umbra Profunda. Carston está alarmado porque ocurrió bajo su radar de seguridad — fallo grave. Misterio sin resolver.
+La "Sociedad del Alma Endurecida" — una cábala entera — desapareció de Marte-1. Rastreados hasta la Umbra Profunda. Caxton está alarmado porque ocurrió bajo su radar de seguridad — fallo grave. Misterio sin resolver.
 
 ### Marte-1 Actual
 El clima de Marte-1 está volviéndose cada vez más frío a medida que el Cometa Pendragon se aproxima. El Tapiz está respondiendo.

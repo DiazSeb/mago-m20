@@ -36,7 +36,7 @@ La red que sostiene a la cábala dentro de Doissetep, Marte-1 y el Concilio. Lea
 
 ---
 
-## Carston
+## Caxton
 **Rol:** Alto mago. Contacto de inteligencia táctica y seguridad operativa.
 **Lealtad:** Profundamente alineado con la cábala y su supervivencia.
 
@@ -44,7 +44,7 @@ La red que sostiene a la cábala dentro de Doissetep, Marte-1 y el Concilio. Lea
 - Fue el primero en dar el aviso rojo sobre Cyde — "no se junten con Cyde"
 - Monitorea movimientos en Marte-1 y Doissetep
 - Filtra qué información de Doissetep es real y qué es propaganda
-- Valida información de los Ojos de Cristal (si Walter da una ubicación, Carston dice si es emboscada u oportunidad)
+- Valida información de los Ojos de Cristal (si Walter da una ubicación, Caxton dice si es emboscada u oportunidad)
 - Está alarmado por la desaparición de la Sociedad del Alma Endurecida
 - Su biblioteca contiene el ritual egipcio usado como base para el Bile an Eolais
 - Aconsejó no usar a Gulliver como vector visible para Mallory — usar a Aida-Wedo
@@ -54,7 +54,7 @@ La red que sostiene a la cábala dentro de Doissetep, Marte-1 y el Concilio. Lea
 
 ---
 
-## Aida-Wedo Magnum
+## Aida-Wedo Mangum
 **Tradición:** Verbena
 **Cábala:** Ojo de Cristal (junto con Walter Thrun)
 **Rol:** Aliada principal. Red de espionaje de Doissetep.
