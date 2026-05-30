@@ -56,3 +56,21 @@ El clima de Marte-1 está volviéndose cada vez más frío a medida que el Comet
 **Dato del futuro (solo Adam lo sabe):** El cometa desapareció en el futuro — alguien lo consumió. El uso masivo de su Quintaesencia causa desbalance cosmológico grave. Dado el timing con la explosión de Doissetep, la muerte de Getulio Vargas y el Gilgul de Heylel Teomim, todo ocurre en el mismo período.
 
 **Conexión con Arturo y Doissetep:** La identidad de Arturo está de alguna forma atada a los cimientos (el premium) de Doissetep. El cometa es el eco de esa identidad.
+
+---
+
+## 🌍 La Guerra de la Ascensión — Noticias *(Sesión 5)*
+
+Reportadas en la Gran Reunión del Salón Semiesférico de Doissetep. No son amenazas directas a la cábala todavía, pero redibujan el tablero del Concilio.
+
+### 🌑 "El Cop" — base en la Luna
+**Katherine Nicoles** (Ingeniera del Vacío **traidora**) compartió la existencia de **"El Cop"**: una **base secreta en el lado oscuro de la Luna** que las Tradiciones **no sabían que existía**. Fue asaltada y se robó información sobre **clones mejorados** del Sindicato y los Progenitores. La Tecnocracia está experimentando con clonado avanzado fuera del radar.
+
+### 🔟 La Gran Falla en Poch — ¿la décima esfera?
+En **Poch** —continente de **Adeptos Virtuales y Étérites** en Horizonte— hay una "Gran Falla". Se dice que ahí podría **emerger la décima esfera**, pero **no está resuelto**. Eje cosmológico potencialmente enorme; vigilar.
+
+### 🩸 Las Gárgonas — la nueva arma de Cyde
+Entre las investigaciones de **Cyde Pinckney** (ahora condenado) había un intento de crear **Gárgonas**: una **técnica vampírica que puede replicarse con magia sin ser vampiro**. Sumado a su línea de usar **cuerpos de la Umbra Oscura como soldados**, perfila una doctrina de guerra basada en no-muertos fabricados.
+
+### ⚰️ Natatapa, muerto en San Francisco
+**Natatapa** fue **confirmado muerto en San Francisco** — una cábala lo detuvo. Quedan **huellas de rituales néfandos** en la ciudad. Foco néfando activo en la Tierra.

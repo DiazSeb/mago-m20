@@ -1,6 +1,6 @@
 # ⏳ Cronología Completa
 
-De la Era Druídica al Día 5 actual — la línea de tiempo de Énna/Adam y de la cábala. Lo que ya ocurrió, lo que ocurrirá si nada cambia, y lo que la cábala está haciendo para cambiarlo.
+De la Era Druídica al Día 6 actual — la línea de tiempo de Énna/Adam y de la cábala. Lo que ya ocurrió, lo que ocurrirá si nada cambia, y lo que la cábala está haciendo para cambiarlo.
 
 ---
 
@@ -53,9 +53,26 @@ De la Era Druídica al Día 5 actual — la línea de tiempo de Énna/Adam y de 
 - **Día 5 (noche — revelación Psychopomp):** Kentaro revela que Kaeron es **descendiente directo de Heylel Teomim**. Reencuadre cosmológico: Heylel **no fusionó dos Avatares humanos** — estaba **unido a un Psychopomp**. Los Médicis llamaron infernismo a esa unión. La fragmentación de Mallory fue prototipo para el Gilgul humano+Psychopomp. En la Segunda Guerra Mundial los nazis experimentaron con esa unión. **Los Psychopomps van a volver** y Kaeron es el vínculo viviente. La Morrigan (Bráth) es una Psychopomp celta — Adam queda atravesado por esta resonancia.
 - **Día 5 (noche — cierre):** Cita conseguida con Sunim para Día 6 mañana.
 
-### Día 6 — Próximo (Sesión 5)
-- Cita con Sunim
-- Investigar evento bloqueado de 1 hora
-- Identificar al árbitro hermético dorado
-- Acceso a Mallory vía Aida-Wedo (plan original)
-- Resolver trato Kentaro ↔ Ojo de Cristal
+### Día 6 — Sesión 5
+
+- **Corrección de continuidad:** Adam nominó a Kentaro como Diácono delante de Kaeron (sin reacción mayor). El Gilgul de Teomim ocurrió en Horizonte — acto oficial del Concilio.
+- **Portal Marte→Tierra:** Adam (Espíritu 5) + James (Correspondencia + Materia) abren un **portal permanente** en el nodo, independiente de Doissetep — plan de evacuación. James agranda su batería de Quintaesencia.
+- **Casa de Caxton:** Caxton recomienda **ganarse a Portos** (no detenerlo), revela que Portos planeaba **sacrificarse para empoderar a Kaeron**, desliza que **la muerte de Portos es parte del futuro**, sugiere **deshacer el Bile an Eolais**, confiesa que **tiene Quiet** y que **es prisionero de su propia casa con Aida-Wedo como guardiana**. Pide que la reunión con Sunim sea en su mansión.
+- **Debate de la Cofradía:** Fátima y Beth ven la muerte de Portos como **fixed point**; Sunim cree que un Seeking puede cambiarla. Fátima confirma que Sunim posicionó a Kaeron deliberadamente.
+- **Robin Heros identificado:** el hermético de túnica dorada (árbitro del Seeking de Kaeron) **creó la magia Planta+Carne**.
+- **Sylphara y los Changelings:** ricos y al pedo en Marte, **disponibles** para un nuevo propósito.
+- **La Gran Reunión (Salón Semiesférico):** todas las facciones + Caxton con Aida-Wedo + figura nueva de túnica Tytalus + **Tomoyuki Hachimoko** (Dragones Dorados / Wu Lung). Noticias de la Guerra de la Ascensión: **Katherine Nicoles / "El Cop"** (base lunar, clones mejorados), **Natatapa muerto en San Francisco**, **Theodora Hetrick** juzgada (Casa de Helekar; Voormas no lo dejaría así), **la Gran Falla en Poch** (¿décima esfera?).
+- **Relato de Marte-1:** la cábala cuenta toda la investigación. Sobrevivientes confirmados: **Cornelius Balt** (graneros), **Jeffrey Jackson** y **Mac Freeman** (mina). **Juanita Yuan** esperaba en Marte-1; los laboratorios de Cyde ya estaban allanados y él **huyó**. **Hortemone reportó**: trampa en la realidad, registros néfandos, intento de crear **Gárgonas**, y la idea de usar **cuerpos de la Umbra Oscura como soldados**.
+- **Reacción política:** los Genízaros se sintieron acusados; **Tomoyuki Hachimoko** calmó la reunión, protegió el tema de la capilla y redirigió hacia Cyde. Adam declaró que Doissetep estaba "viciado" — **temblor de fuerzas**.
+- **Veredicto sobre Cyde:** **sentencia de muerte y expulsión de las Tradiciones** (sin prueba directa; indicios de Estigia y de las pistas de Walter; los Genízaros se negaron a opinar).
+- **Tutoría de Woody:** aprobada a la cábala (James la defiende), con el cuerpo destinado a Hortemone tras la transferencia mental. **Robin Heros** reclamó conocer a Woody antes — aprobado por votación.
+- **CLIFFHANGER:** Sunim arranca un último punto; el temblor se eleva desde **Portos**; el **sol artificial arde en rojo**; **Portos se levanta**.
+
+### Día 6+ — Próximo (Sesión 6)
+- ¿Qué hace Portos con el sol en rojo?
+- ¿Qué iba a decir Sunim?
+- Reunión con Sunim en la mansión de Caxton
+- Robin Heros ↔ Woody
+- ¿Deshacer el Bile an Eolais?
+- Liberar a Caxton / entender a Aida-Wedo
+- Redirigir a Sylphara y los Changelings

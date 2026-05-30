@@ -1,9 +1,9 @@
 # 📔 Crónica: El Eco de Athgealltanas
 
 **Sistema:** Mage: The Ascension M20
-**Estado del Tapiz:** Inestable — Corrupción Entrópica activa · Cometa Pendragon aproximándose · Psychopomps en camino
+**Estado del Tapiz:** Inestable — Corrupción Entrópica activa · Cometa Pendragon aproximándose · Psychopomps en camino · Portos levantándose
 **Ubicación Principal:** Marte-1 / Nodo Athgealltanas / Doissetep
-**Última actualización:** Sesión 4 — Día 5 noche, Kaeron Archimago, Kentaro encarnado
+**Última actualización:** Sesión 5 — Día 6, Cyde condenado, Woody en tutoría, Portos se levanta con el sol en rojo
 
 ---
 
@@ -11,26 +11,44 @@
 
 | Indicador | Valor |
 | :--- | :--- |
-| Sesión | 4 (completada) |
-| Día in-game | 5 (noche) · próxima sesión: Día 6 mañana |
-| Quintaesencia del Nodo | 18 reservas (+10/sem, -2 diezmo Sylphara) |
-| Bile an Eolais | Activo — Vidas Pasadas 2 disponible |
+| Sesión | 5 (completada) |
+| Día in-game | 6 · cliffhanger activo (Portos de pie, sol rojo) |
+| Quintaesencia del Nodo | 18 reservas (+10/sem, -2 diezmo Sylphara) · James agrandó su batería |
+| Portal Marte→Tierra | **Operativo** — permanente, independiente de Doissetep (plan de evacuación) |
+| Bile an Eolais | Activo — Caxton sugiere deshacerlo (riesgo de uso en contra) |
 | Cometa Pendragon | Aproximándose — Velo debilitándose |
-| Kentaro | Encarnado · Maestro del Tiempo · Quiet medio |
-| Kaeron Mustae | **Archimago** (ascenso Sesión 4) — aliado contingente |
-| Premium | **Bajo la torre Druashi** (no la capilla) — revelado por Kaeron |
-| Amenaza Doissetep | Doble: Portos (interna) + invasión externa coordinada |
+| Kentaro | Encarnado · Maestro del Tiempo · Quiet medio · nominado a Diácono por Adam |
+| Kaeron Mustae | **Archimago** — aliado contingente · descendiente de Heylel Teomim |
+| Cyde Pinckney | **Sentencia de muerte y expulsión** de las Tradiciones · huyó del laboratorio |
+| Woody | **Tutoría aprobada** a la cábala · cuerpo destinado a Hortemone tras transferencia |
+| Caxton | **Prisionero de su propia casa** — Aida-Wedo es su guardiana · tiene Quiet |
+| Premium | Bajo la torre Druashi · Tomoyuki Hachimoko protegió el tema en público |
+| Amenaza Doissetep | Portos se levantó con el sol artificial ardiendo en rojo |
 
 ---
 
-## 🎯 Próximos eventos (Día 6)
+## 🎯 Próximos eventos (post-cliffhanger)
 
-1. **Cita con Sunim** — entender la agenda real de la Cofradía del Nuevo Viento
-2. **Investigar evento bloqueado** — ¿qué pasó hace 1 hora que Kentaro no pudo ver?
-3. **Torre Druashi** — premium real está debajo; planificar approach
-4. **Identificar al árbitro hermético dorado** del Seeking de Kaeron
-5. **Aida-Wedo + Mallory** — plan original con info nueva sobre Psychopomps
-6. **Reunión con Kaeron Mustae** (Genízaros) — ahora contexto distinto: él es Archimago aliado, no inquisidor
+1. **¿Qué hace Portos?** — se levantó con el sol artificial en rojo. ¿Inicio de la destrucción de Doissetep?
+2. **¿Qué iba a decir Sunim** como último punto antes de la interrupción de Portos?
+3. **Reunión con Sunim** — en la mansión de Caxton (a definir tras el evento de Portos)
+4. **Robin Heros y Woody** — qué quiere Robin antes de la transferencia mental
+5. **Liberar a Caxton** de Aida-Wedo — o entender por qué es su guardiana
+6. **¿Deshacer el Bile an Eolais?** — Caxton lo recomienda (riesgo de uso en contra)
+7. **Redirigir a Sylphara y los Changelings** hacia un nuevo propósito (ricos y disponibles)
+8. **¿Ganarse a Portos o detenerlo?** — Caxton sugiere ganárselo; su muerte "es parte del futuro"
+
+---
+
+## ⚖️ La Gran Reunión (Sesión 5)
+
+**Cyde Pinckney** fue **condenado a muerte y expulsado de las Tradiciones** tras el relato completo de Marte-1. No hay prueba directa de asociación néfanda (solo libros y Wonders prohibidas), pero caminar por Estigia sin daño requiere mecenazgo néfandico, y Walter reveló que guardaba pistas de grupos néfandicos. Los Genízaros se negaron a opinar.
+
+**Robin Heros** fue identificado: el hermético de túnica dorada que arbitró el Seeking de Kaeron es el **creador de la magia Planta+Carne** de los Genízaros. Reclamó conocer a Woody antes de la transferencia mental — aprobado por votación.
+
+**Tomoyuki Hachimoko** (líder de los Dragones Dorados / Wu Lung) intervino para calmar la reunión, protegió el tema de la capilla y redirigió las acusaciones hacia Cyde.
+
+**Guerra de la Ascensión:** "El Cop" (base secreta en el lado oscuro de la Luna), la décima esfera que podría emerger en Poch, las Gárgonas de Cyde, y la muerte de Natatapa en San Francisco.
 
 ---
 
@@ -52,6 +70,6 @@
 - **Mundo** — Nodo de Athgealltanas, Doissetep, amenazas activas
 - **Personajes** — aliados, enemigos, otras figuras políticas
 - **Lore** — Heylel Teomim (reencuadre Psychopomp), Salonikas, Kentaro
-- **Cronología** — línea de tiempo completa hasta Día 5 noche
+- **Cronología** — línea de tiempo completa hasta Día 6 (cliffhanger Portos)
 - **Trama** — quests activas y misterios abiertos
-- **Sesiones** — Sesión 4 disponible
+- **Sesiones** — Sesión 4 y Sesión 5 disponibles

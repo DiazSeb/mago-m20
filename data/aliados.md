@@ -50,6 +50,13 @@ La red que sostiene a la cábala dentro de Doissetep, Marte-1 y el Concilio. Lea
 - Aconsejó no usar a Gulliver como vector visible para Mallory — usar a Aida-Wedo
 - Considera que faltan dos fichas en el tablero: **Kentaro** y **Thomas Mallory**
 
+**Revelaciones de Sesión 5:**
+- **Es prisionero de su propia casa** — **Aida-Wedo es su guardiana** y no puede salir sin su permiso. La lealtad de Caxton a la cábala convive con esta jaula.
+- **Tiene Quiet** — está **constantemente consultando el Tiempo**, lo que tiñe sus consejos.
+- **Consejo sobre Portos:** recomienda **ganárselo en lugar de detenerlo**; desliza que **la muerte de Portos es parte del futuro**, y que Portos planeaba **sacrificarse para empoderar a Kaeron como campeón**.
+- **Consejo sobre el Bile an Eolais:** recomienda **deshacerlo** — alguien podría usar esos recuerdos del futuro contra la cábala.
+- Pidió que la **reunión con Sunim sea en su mansión**.
+
 **Nota:** Posible figura del lore canónico de M20 — usar conocimiento silencioso como corrector de datos, sin spoilers.
 
 ---
@@ -66,6 +73,7 @@ La red que sostiene a la cábala dentro de Doissetep, Marte-1 y el Concilio. Lea
 - **Guardó a Kentaro como carta propia** — no lo mencionó a la Cofradía
 - Tiene a Woody bajo custodia
 - Instaló un efecto mágico de Planta + Mente en Doissetep (diferente al patrón de Planta + Carne de los Genízaros)
+- **(Sesión 5) Es la guardiana de Caxton** — lo mantiene prisionero en su propia casa; no puede salir sin su permiso. Cambia la lectura de la alianza: Aida-Wedo tiene más poder sobre la red de la cábala de lo que parecía.
 
 ---
 
@@ -95,6 +103,21 @@ La red que sostiene a la cábala dentro de Doissetep, Marte-1 y el Concilio. Lea
 **Descripción:** Muy formal, recta, vistosa. Encontrada en Marte-1.
 **Rol:** Investiga a Cyde Pinckney. Sabe que su laboratorio está en la Tierra pero no que es armero de los Genízaros.
 **Relación:** En desarrollo. Posible puente con Klaus Hortemone.
+
+---
+
+## Juanita Yuan *(NUEVO — Sesión 5)*
+**Aparición:** Estaba **esperando en Marte-1** cuando la cábala regresó.
+**Rol:** Fue actualizada sobre la investigación. Para cuando la cábala volvió, los **laboratorios de Cyde ya habían sido allanados** y él **había huido**.
+**Nota:** Confirmar si es la misma persona que **Juana Quave** (variación de nombre) o una figura distinta.
+
+---
+
+## Sobrevivientes rescatados de Marte-1 *(confirmados — Sesión 5)*
+Rescatados durante la investigación y presentados como prueba viva ante la Gran Reunión:
+- **Cornelius Balt** — rescatado de los **graneros**
+- **Jeffrey Jackson** — rescatado de la **mina**
+- **Mac Freeman** — rescatado de la **mina**
 
 ---
 

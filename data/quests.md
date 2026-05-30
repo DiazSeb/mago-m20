@@ -6,10 +6,15 @@ Lo que la cábala está persiguiendo activamente — y las preguntas cuyas respu
 
 ## 🎯 Quests Activas
 
-### Quest 0 — Cita con Sunim *(NUEVA — prioritaria, Sesión 5)*
-**Objetivo:** Entender la agenda real de la Cofradía del Nuevo Viento. ¿Por qué posicionaron a Kaeron como primera figura de Doissetep? ¿Saben del linaje Psychopomp? ¿Saben de Adam y la Morrigan?
-**Estado:** Cita confirmada para Día 6 mañana.
-**Riesgos:** Sunim "juega cerca del pecho" — no reveló nada en saludos formales. Adam debe decidir qué información compartir.
+### Quest 0 — Reunión con Sunim *(prioritaria — pendiente tras Sesión 5)*
+**Objetivo:** Entender la agenda real de la Cofradía del Nuevo Viento. ¿Saben del linaje Psychopomp? ¿Saben de Adam y la Morrigan?
+**Estado (Sesión 5):** Confirmado por Fátima que **Sunim posicionó a Kaeron como primera figura de Doissetep deliberadamente**. Caxton pidió que la **reunión sea en su mansión**. Sunim arrancaba un "último punto" en la Gran Reunión cuando **Portos lo interrumpió levantándose** — la reunión formal con Sunim queda **pendiente** y eclipsada por el cliffhanger.
+**Subpregunta nueva:** **¿Qué iba a decir Sunim** como último punto?
+**Riesgos:** Sunim "juega cerca del pecho". Adam debe decidir qué información compartir.
+
+### Quest 0-bis — El Portal de Evacuación ✅ COMPLETADA (Sesión 5)
+**Objetivo:** Garantizar una salida de Marte independiente de Doissetep.
+**Resolución:** **Portal permanente Marte→Tierra** abierto en el nodo (Adam Espíritu 5 + James Correspondencia/Materia). Independiente de la infraestructura de Doissetep. **Plan de evacuación** si Portos destruye la fortaleza. James **agrandó su batería de Quintaesencia** — preparación para algo costoso por venir.
 
 ### Quest 1 — El Caballero Prisionero (PRINCIPAL)
 **Objetivo:** Entregar la Carta de Gulliver a Thomas Mallory.
@@ -37,14 +42,27 @@ Lo que la cábala está persiguiendo activamente — y las preguntas cuyas respu
 **Nota de Adam:** El cometa desapareció en el futuro — alguien lo usó. La cábala puede ser ese alguien.
 **Conexión Sesión 4:** Con Kentaro encarnado y Maestro del Tiempo, hay nueva ventana para entender los efectos cosmológicos del consumo del cometa.
 
-### Quest 6 — Detener a Portos *(actualizada Sesión 4)*
-**Objetivo:** Misión asignada al mentor de Mel.
-**Información nueva (Sesión 4):**
+### Quest 6 — ¿Detener o ganarse a Portos? *(actualizada Sesión 5)*
+**Objetivo:** Misión asignada al mentor de Mel — pero el marco cambió.
+**Información nueva (Sesión 5):**
+- **Caxton recomienda ganárselo en lugar de detenerlo**.
+- **Portos planeaba sacrificarse** para empoderar a **Kaeron como campeón**.
+- **Su muerte "es parte del futuro"** (Caxton). Dentro de la Cofradía: **Fátima y Beth** la ven como **fixed point in time** (inevitable); **Sunim** cree que un **Seeking** podría reescribirla.
+- **CLIFFHANGER:** en plena Gran Reunión, el temblor se elevó desde Portos, **el sol artificial ardió en rojo y Portos se levantó**. La crisis estalla *ahora*.
+**Información previa (Sesión 4):**
 - El **premium está debajo de la torre Druashi**, no en la capilla — Portos comparte la torre con Kuan Tsu (Akáshico, neutral)
 - **Hay una invasión externa coordinada** que se activa simultáneo con el premium
-- **Kaeron tampoco confía en Portos** — potencial aliado para contenerlo
-**Opciones:** Eliminarlo, contenerlo, o desactivar su acceso al premium desde la torre Druashi.
+- **Kaeron tampoco confía en Portos**
+**Opciones:** Eliminarlo, contenerlo, ganárselo (Caxton), o desactivar su acceso al premium. ¿La cábala juega del lado del fixed point o del Seeking?
 **Ventana:** El Cometa Pendragon. La invasión externa coordinada también está atada a esa ventana.
+
+### Quest 6-bis — Cyde Pinckney ✅ CERRADA judicialmente (Sesión 5)
+**Resolución:** **Sentencia de muerte y expulsión de las Tradiciones** tras el relato de Marte-1 (sin prueba directa de asociación néfanda, pero indicios fuertes: Estigia, pistas de Walter, Gárgonas, soldados de la Umbra Oscura).
+**Cabo suelto:** Cyde **había huido** — laboratorios ya allanados. **Sigue suelto.** Cazarlo o anticipar su próximo movimiento es nueva quest implícita.
+
+### Quest 6-ter — Tutoría de Woody *(NUEVA — Sesión 5)*
+**Objetivo:** Salvar la mente de Woody (defendido por James) y transferirla; el **cuerpo va a Hortemone** tras la transferencia.
+**Complicación:** **Robin Heros** —creador de la magia Planta+Carne— **reclamó conocer a Woody antes de la transferencia** (aprobado por votación). ¿Qué quiere Robin de Woody?
 
 ### Quest 7 — La Invasión Externa Coordinada *(NUEVA — Sesión 4)*
 **Objetivo:** Identificar quién lidera la invasión externa que destruye Doissetep coordinada con la activación del premium.
@@ -55,9 +73,10 @@ Lo que la cábala está persiguiendo activamente — y las preguntas cuyas respu
 - Una facción canónica desconocida
 - Los Psychopomps en su retorno (mítico, pero posible)
 
-### Quest 8 — El Árbitro Hermético Dorado *(NUEVA — Sesión 4)*
+### Quest 8 — El Árbitro Hermético Dorado ✅ RESUELTA (Sesión 5)
 **Objetivo:** Identificar a la figura con vestimentas herméticas doradas que arbitró el Seeking de Kaeron.
-**Estado:** Identidad desconocida. No es ningún Diácono ni miembro reconocible de la Cofradía del Nuevo Viento ni Ruby Children. Posible figura externa traída específicamente para este ritual.
+**Resolución:** Es **Robin Heros** — y además **creó la magia de Planta + Carne** (firma de la Criatura del Nodo y de la seguridad Genízara). El árbitro del ascenso de Kaeron resulta ser el inventor de la magia que los Genízaros usan para infiltrar el nodo de la cábala.
+**Cabo abierto:** ¿Por qué creó esa magia para los Genízaros? ¿Y qué quiere de Woody (reclamó conocerlo antes de la transferencia)?
 
 ### Quest 9 — El Bloqueo Temporal *(NUEVA — Sesión 4)*
 **Objetivo:** ¿Qué evento de 1 hora bloqueó la visión de Kentaro tras encarnar?
@@ -71,6 +90,23 @@ Lo que la cábala está persiguiendo activamente — y las preguntas cuyas respu
 ---
 
 ## ❓ Misterios Abiertos
+
+### Resueltos en Sesión 5
+
+1. ~~**¿Quién es el árbitro hermético dorado?**~~ → **Robin Heros**, además creador de la magia Planta+Carne.
+2. ~~**¿Por qué la Cofradía posicionó a Kaeron?**~~ → confirmado por Fátima: Sunim lo hizo deliberadamente como "primera figura de Doissetep".
+3. ~~**¿Era Cyde néfando?**~~ → sin prueba directa, pero condenado igual (indicios: Estigia, Gárgonas, soldados de la Umbra Oscura, pistas de Walter).
+
+### Nuevos en Sesión 5
+
+1. **¿Qué iba a decir Sunim** como último punto antes de que Portos lo interrumpiera?
+2. **¿Qué hace Portos** con el sol artificial ardiendo en rojo? ¿Es el inicio de la destrucción de Doissetep?
+3. **¿Qué quiere Robin Heros de Woody?** ¿Y por qué creó la magia Planta+Carne para los Genízaros?
+4. **¿Por qué Aida-Wedo tiene a Caxton prisionero** en su propia casa?
+5. **¿Qué es la décima esfera** y por qué podría emerger en Poch?
+6. **¿Quién es Theodora Hetrick** realmente y qué planea Voormas con ella tras lo de Jorg?
+7. **¿La muerte de Portos es un fixed point** (Fátima/Beth) o reescribible vía Seeking (Sunim)? ¿De qué lado juega la cábala?
+8. **¿Dónde huyó Cyde** y cuál es su próximo movimiento?
 
 ### Resueltos en Sesión 4
 
