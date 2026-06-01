@@ -109,7 +109,7 @@ La red que sostiene a la cábala dentro de Doissetep, Marte-1 y el Concilio. Lea
 ## Juanita Yuan *(NUEVO — Sesión 5)*
 **Aparición:** Estaba **esperando en Marte-1** cuando la cábala regresó.
 **Rol:** Fue actualizada sobre la investigación. Para cuando la cábala volvió, los **laboratorios de Cyde ya habían sido allanados** y él **había huido**.
-**Nota:** Confirmar si es la misma persona que **Juana Quave** (variación de nombre) o una figura distinta.
+**Nota:** Es una figura **distinta** de Juana Quave (la Tytalus) — no confundir.
 
 ---
 

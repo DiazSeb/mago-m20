@@ -160,7 +160,7 @@ El **temblor se elevó** — venía de **Portos**. El **sol artificial ardió en
 ### NPCs nuevos
 - **Tomoyuki Hachimoko** — líder de los Dragones Dorados (Wu Lung). Conoce Doissetep profundamente. Intervino para calmar la reunión, protegió el tema de la capilla, redirigió hacia Cyde.
 - **Robin Heros** — *identificado formalmente*: el hermético de túnica dorada. **Creador de la magia Planta+Carne**, árbitro del Seeking de Kaeron.
-- **Juanita Yuan** — presente en Marte-1 cuando la cábala regresó. Fue actualizada sobre la investigación. *(Posible relación con Juana Quave — confirmar si es la misma persona.)*
+- **Juanita Yuan** — presente en Marte-1 cuando la cábala regresó. Fue actualizada sobre la investigación. *(Figura distinta de Juana Quave, la Tytalus — no confundir.)*
 - **Cornelius Balt, Jeffrey Jackson, Mac Freeman** — sobrevivientes rescatados en Marte-1.
 - **Katherine Nicoles** — Ingeniera del Vacío traidora ("El Cop", clones mejorados).
 - **Theodora Hetrick** — discípula de Voormas, juzgada por estar en Jorg, bajo cuidado de la Casa de Helekar.
